@@ -1,0 +1,550 @@
+
+:root{
+    --pri:#FA812F;
+    --sec:#d89d44;
+    --tri:#B6771D;
+    --tri1:#FFC29B;
+    
+}
+
+
+@font-face {
+    font-family: light;
+    src: url(./RobotoCondensed-Light.ttf);
+}
+@font-face {
+    font-family: thin;
+    src: url(./RobotoCondensed-Thin.ttf);
+}
+@font-face {
+    font-family:bold;
+    src: url(./RobotoCondensed-Black.ttf);
+}
+@font-face {
+    font-family:normal;
+    src: url(./RobotoCondensed-Regular.ttf);
+}
+* {
+   margin: 0;
+   padding: 0;
+   -webkit-box-sizing: border-box;
+           box-sizing: border-box;
+   font-family:gilroy;
+   
+}
+html,
+body {
+     height: 100%;
+     width: 100%;
+     color: black;
+}
+#main{
+    height: 100%;
+    width: 100%;
+    background-color: var(--tri);
+}
+
+.allElems .nav-in{
+    padding: 15px 20px;
+    margin-top: 1px;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    background-color: var(--pri);
+    border-radius: 10px;
+   
+}
+
+.nav-in button{
+    background-color: #814b05;
+    font-size: 25px;
+    padding: 15px 40px;
+    border-radius: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.nav-in h1{
+    font-size: 50px
+}
+
+
+section.allElems{
+    height: 100%;
+    width: 100%;
+    padding: 40px;
+    background-color:var(--sec);
+    position: absolute;
+    gap: 10px;
+}
+
+.allElems .allFeatures{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;    
+    -webkit-box-pack: justify;    
+        -ms-flex-pack: justify;    
+            justify-content: space-between;
+}
+
+.allElems header{
+    width: 100%;
+    height: 250px;
+    background-image: url(https://images.unsplash.com/photo-1514519273132-6a1abd48302c?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fHNreXxlbnwwfDB8MHx8fDA%3D&auto=format&fit=crop&q=60&w=500);
+     background-size: cover;
+     background-position: center;
+    margin: 10px;
+    border-radius: 10px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: 60px;
+    color: white;
+}
+
+header .header1 h1{
+  font-size: 60px;   
+  font-weight: 800;
+   margin-bottom: 40px;
+   color: white;
+}
+header .header1 h2{
+  font-size: 40px;   
+  font-weight: 500;
+ 
+}
+header .header1 h4{
+  font-size: 50px;   
+  font-weight: 500;
+}
+
+header .header2 h2{
+    font-size: 40px;   
+    font-weight: 800; 
+    margin-bottom: 10px;
+}
+header .header2 p{
+    font-size: 30px;
+    font-weight: 600
+}
+header .header2 h3{
+    font-size: 40px;
+    margin-top: -20px;
+}
+
+
+.elem{
+    background-color:var(--tri);
+    border-radius: 10px;
+    height: 350px;
+    width: 300px;
+    border-radius: 10px;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-transition: all ease 0.96;
+    -o-transition: all ease 0.96;
+    transition: all ease 0.96;
+    cursor: pointer;
+    -webkit-box-shadow: 0 5px 20px rgba(2, 23, 23, 5);
+            box-shadow: 0 5px 20px rgba(2, 23, 23, 5); 
+}
+.elem img{
+  height: 100%;    
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 10px;
+}
+
+.elem:active{
+    scale: 0.96;
+}
+
+.fullElem{
+    width: 100%;
+    height: 100%;
+    background-color:var(--tri);
+    font-size: 30px;
+    padding: 40px;
+    display: none;
+    position: absolute;
+}
+
+.back{
+    position: absolute;
+    right: 5%;
+    background-color: red;
+    border-radius: 10px;
+    padding: 15px;
+    font-size: 20px;
+    width: 80px;
+}
+.back:active{
+    scale: 0.86;
+}
+ .todo-list-fullpage
+ .todo-container{
+    width: 100%;
+    height: 80%;
+    margin-top: 30px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 20px;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+ .todo-list-fullpage
+ .todo-container .addTask{
+    width: 35%;
+    background-color:var(--sec) ;
+    height: 100%;
+     border-radius: 10px;
+ }
+ .todo-list-fullpage
+ .todo-container .allTask{
+    width: 67%;
+    height: 100%;
+    background-color: var(--sec);
+    border-radius: 10px;
+ }
+  .todo-list-fullpage
+ .todo-container .addTask form{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    justify-items: center;
+    gap: 2px;
+ }
+ 
+ .addTask form input{
+    background-color: var(--pri);
+    margin-left: 60px;
+    width: 85%;
+    margin-top: 8%;
+    height: 50px;
+    border-radius: 10px;
+    border: none;
+    font-size: 15px;
+    padding: 10px 15px;
+
+ }
+
+ .addTask form textarea{
+    background-color: var(--pri);
+    margin-left: 60px;
+    width: 85%;
+    margin-top: 8%;
+    border-radius: 10px;
+    border: none;
+    font-size: 15px;
+    padding: 10px 15px;
+ }
+
+.addTask form textarea{
+    height: 250px;
+}
+
+ .addTask form button{
+    background-color: var(--sec);
+    margin-left: 60px;
+    width: 85%;
+    margin-top: 8%;
+    height: 50px;
+    border-radius: 10px;
+    border: none;
+    font-size: 20px;
+    padding: 10px 15px;
+    
+ }
+ 
+ .addTask form button:active{
+    scale: 0.98;
+ }
+
+ .todo-list-fullpage
+ .todo-container .allTask{
+    width: 67%;
+    height: 100%;
+    background-color: var(--sec);
+    border-radius: 10px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    padding: 30px;
+    gap: 7px;
+    overflow: auto;
+ }
+ .task{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 100%;
+    background-color: #FA812F;
+    height: 12%;
+    padding: 11px 15px;
+    border-radius: 10px;   
+ }
+ .task h5{
+    font-size: 30px;
+    
+ }
+ .task button{
+    background-color: rgb(42, 179, 42);
+    height: 25px;
+    border-radius: 10px;
+    padding: 4px 10px; 
+ }
+ .task button:active{
+  scale: 0.96;
+ }
+  
+ .Daily-Goals-fullpage .daily-planner{    
+    width: 100%;
+    height: 85%;
+    background-color: var(--sec);
+    margin-top: 15px;
+    border-radius: 10px;
+    padding: 30px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    gap: 10px;
+    
+ }
+
+.Daily-Goals-fullpage .daily-planner .daliy{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background-color: #814b05;
+    width: 48%;
+    height: 40px;
+    border-radius: 10px;
+    padding: 28px;
+    position: relative;
+    margin-bottom: 10px;
+    
+}
+.daily-planner .daliy p{
+    position: absolute;
+    top:13%;
+    left: 0.4%;
+    font-size: 18px;
+    color: white;
+}
+.daily-planner .daliy input{
+   padding: 9px 25px;
+   width: 100%;
+   background-color: #814b05;
+   border: none;
+   border-radius: 10px;
+   outline: none;
+   color: white;
+   font-size: 18px; 
+   margin-top: 16px;
+}
+ .Motivational-fullpage{
+  
+    position: relative;
+ }
+
+ .Motivational-fullpage .Motivational-container{
+    width: 60%;
+    height: 65%;
+    position: absolute;
+    border-radius: 30px;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%,-50%);
+        -ms-transform: translate(-50%,-50%);
+            transform: translate(-50%,-50%);
+ }
+ .Motivational-fullpage .Motivational-container::after{
+    content: '';
+    height: 70%;
+    width: 100%;
+    position: absolute;
+    background-color: var(--sec);
+    border-radius: 50px;
+    scale: 1.2;
+    -webkit-filter: blur(150px);
+            filter: blur(150px);
+    z-index: 0;
+ }
+ .Motivational-fullpage .Motivational-container .motivalnal-wrapper{
+    z-index: 10;
+    position: absolute;
+    width: 100%;
+    background-color: var(--pri);
+    border-radius: 10px;
+    padding: 15px;
+ }
+.motivalnal-wrapper .motivanal-1{
+    height: 60px;
+    width: 32%;
+    background-color: var(--sec);
+    padding: 11px ;
+    border-radius: 10px;
+}
+.motivanal-1 p{
+    font-size: 40px;
+    
+}
+.motivational-2{
+    padding: 10px;
+    font-size: 30px;
+    margin-top: 20px;
+}
+.motivational-3{
+    height: 75px;
+    margin-top: 25px;
+    width: 25%;
+    background-color: var(--sec);
+    padding: 10px ;
+    border-radius: 10px;
+    margin-left: 70%;
+}
+
+#img{
+  margin-left: 90%;
+  margin-top: 10px;
+ position: absolute;
+ height: 50px;
+}
+
+.fullElem .pomodoro-fullpage{
+    display: block;
+    
+}
+
+.pomodoro1{
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    -webkit-transform: translate(-50%,-50%);
+        -ms-transform: translate(-50%,-50%);
+            transform: translate(-50%,-50%);
+    text-align: center;   
+}
+.pomodoro1 h1{
+    font-size: 150px;
+}
+.pomodoro1 button{
+    background-color : var(--sec);
+    font-size: 25px;
+    padding: 15px 40px;
+    border-radius: 5px;
+    margin: 10px;
+    border: none;
+    -webkit-box-shadow: 5px 5px 0 black;
+            box-shadow: 5px 5px 0 black;
+    text-shadow: 1px 1px 0 white;
+    cursor: pointer;
+}
+.pomodoro1 button:active{
+   scale: 0.95;
+}
+.pomodoro-fullpage .sessions{
+    position: absolute;
+    top: 30%;
+    font-size: 30px;
+    left: 50%;
+    -webkit-transform: translate(-50%,-50%);
+        -ms-transform: translate(-50%,-50%);
+            transform: translate(-50%,-50%);
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background-color: #18e734;
+    border-radius: 10px;
+     -webkit-box-shadow: 5px 5px 0 black;
+             box-shadow: 5px 5px 0 black;
+     text-shadow: 1px 1px 0 white;
+}
+.pomodoro-fullpage .sessions h3{
+    padding: 15px 30px;  
+}
+.Daily-Planner-fullpage .planner-container{
+    width: 40%;
+    position: absolute;
+    left: 30%;
+    height: 85%;
+    border-radius: 10px;
+    background-color: var(--tri1);
+    padding: 10px;
+     overflow:auto;
+     font-size: 30px;
+}
+.planner-container h3{
+    margin-top: 25px;
+    text-align: center;
+}
+
+.planner-container .goalsPlanner input{
+  height: 50px;
+  width: 100%;
+  font-size: 25px;
+ margin-top: 5px;
+ border-radius: 10px;
+ padding: 9px 25px;
+   width: 100%;
+   background-color: #814b05;
+   border: none;
+   border-radius: 10px;
+   outline: none;
+   color: white;
+   font-size: 18px; 
+   margin-top: 16px;
+   overflow:auto;
+}
+.planner-container .goalsPlanner ::placeholder{
+    color: black;
+}
+
+
+
+
+
+
